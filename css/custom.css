@@ -3,6 +3,10 @@
     --heading-color: #0e1b4d;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #header {
     padding: 0;
 }
