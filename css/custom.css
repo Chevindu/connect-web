@@ -98,6 +98,60 @@
     font-size: 2rem;
 }
 
+#event-flow .steps li {
+    margin: 1em 0 0;
+    padding-top: 0.5em;
+}
+
+#event-flow .steps li::marker {
+    color: var(--heading-color);
+    font-size: 1rem;
+}
+
+#event-flow .steps li h3 {
+    font-size: 1rem;
+}
+
+#prizes .first-text {
+    background: #FCEABB;
+    background: -webkit-linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+    background: -moz-linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+    background: linear-gradient(to bottom, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+}
+
+#prizes .second-text {
+    background: #D7D7D8;
+    background: -webkit-linear-gradient(to bottom, #D7D7D8 0%, #959BA3 50%, #848B98 51%, #AEB2B8 100%);
+    background: -moz-linear-gradient(to bottom, #D7D7D8 0%, #959BA3 50%, #848B98 51%, #AEB2B8 100%);
+    background: linear-gradient(to bottom, #D7D7D8 0%, #959BA3 50%, #848B98 51%, #AEB2B8 100%);
+}
+
+#prizes .third-text {
+    background: #EACA58;
+    background: -webkit-linear-gradient(to bottom, #EACA58 0%, #836600 50%, #503B00 51%, #C1A132 100%);
+    background: -moz-linear-gradient(to bottom, #EACA58 0%, #836600 50%, #503B00 51%, #C1A132 100%);
+    background: linear-gradient(to bottom, #EACA58 0%, #836600 50%, #503B00 51%, #C1A132 100%);
+}
+
+#prizes .prize-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: calc(55px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+    margin: 0;
+    padding: 0 0 0 15px;
+    border-left: 1px solid #00000040;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#prizes .price-icon {
+    text-align: center;
+}
+
 @media (max-width: 991px) {
     #header #logo .scrollto img {
         min-height: 40px;
@@ -107,5 +161,10 @@
     }
     .count-container #count-countdown li span {
         font-size: 2rem;
+    }
+    #prizes .prize-text {
+        text-align: center;
+        padding: 0;
+        border: none;
     }
 }
