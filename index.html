@@ -338,10 +338,10 @@
           <li class="list-group-item">1. Appointment of expert panel</li>
           <li class="list-group-item">2. Review of competition guidelines</li>
           <li class="list-group-item">3. Competition launch and registration opening</li>
-          <li class="list-group-item">4. 1st info session (public)</li>
+          <li class="list-group-item">4. 1<sup>st</sup> info session (public)</li>
           <li class="list-group-item">5. Registration closing</li>
           <li class="list-group-item">6. Review of idea submissions by expert panel</li>
-          <li class="list-group-item">7. 2nd info session (for shortlisted teams)</li>
+          <li class="list-group-item">7. 2<sup>nd</sup> info session (for shortlisted teams)</li>
           <li class="list-group-item">8. Idea presentations</li>
           <li class="list-group-item">9. Review of idea presentations</li>
           <li class="list-group-item">10. Awards night</li>
@@ -701,7 +701,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="" method="post" role="form" class="contactForm" netlify netlify-honeypot="connect">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
@@ -718,6 +718,8 @@
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
                 data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div class="validation"></div>
+              <input type="text" class="form-control" name="connect" id="connect" placeholder="Connect"
+                style="visibility:hidden; position:absolute;" />
             </div>
             <div class="form-group">
               <textarea class="form-control" name="message" rows="5" data-rule="required"
@@ -758,7 +760,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <!-- <script src="contactform/contactform.js"></script> -->
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
