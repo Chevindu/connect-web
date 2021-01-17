@@ -156,6 +156,23 @@ body {
     text-align: center;
 }
 
+.vbox-container {
+    overflow-y: hidden;
+}
+
+.vbox-content {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vbox-container img {
+    max-height: 90%;
+}
+
 @media (max-width: 991px) {
     #header #logo .scrollto img {
         min-height: 40px;
