@@ -380,6 +380,9 @@ tl-item.active .tl-dot:before {
     .intro-container .intro-logos {
         margin-top: 10px;
     }
+    #intro h5 {
+        font-size: 1.1rem;
+    }
     #prizes .prize-text {
         text-align: center;
         padding: 0;
