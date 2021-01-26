@@ -13,24 +13,28 @@ body {
     border: 1px solid #eee;
     border-left-width: 5px;
     border-radius: 3px;
-  }
-  .callout h4 {
+}
+
+.callout h4 {
     margin-top: 0;
     margin-bottom: 5px;
-  }
-  .callout p:last-child {
+}
+
+.callout p:last-child {
     margin-bottom: 0;
-  }
-  .callout code {
+}
+
+.callout code {
     border-radius: 3px;
-  }
-  .callout + .bs-callout {
+}
+
+.callout+.bs-callout {
     margin-top: -5px;
-  }
-  
-  .callout-primary {
+}
+
+.callout-primary {
     border-left-color: var(--accent-1);
-  }
+}
 
 #header {
     padding: 0;
@@ -261,8 +265,7 @@ body {
     border-color: rgba(160, 175, 185, .15)
 }
 
-.tl-dot:after,
-.tl-dot:before {
+.tl-dot:after, .tl-dot:before {
     content: '';
     position: absolute;
     border-color: inherit;
@@ -297,8 +300,7 @@ tl-item.active .tl-dot:before {
     border-color: rgba(160, 175, 185, .15)
 }
 
-.tl-dot:after,
-.tl-dot:before {
+.tl-dot:after, .tl-dot:before {
     content: '';
     position: absolute;
     border-color: inherit;
@@ -367,6 +369,43 @@ tl-item.active .tl-dot:before {
     max-height: 90%;
 }
 
+.primary-btn{
+    background: #f82249;
+    border: 0;
+    padding: 10px 40px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    color: #fff;
+    background: #e0072f;
+}
+
+.secondary-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #f82249;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #f82249;
+}
+
+.secondary-btn:hover {
+    background: #f82249;
+    color: #fff;
+}
+
 @media (max-width: 991px) {
     #header #logo .scrollto img {
         min-height: 40px;
@@ -391,5 +430,11 @@ tl-item.active .tl-dot:before {
     .page-container {
         max-width: 1140px;
         margin: 0 auto
+    }
+}
+
+@media (max-width: 991px) {
+    .intro-container .logo {
+        height: 100px;
     }
 }
