@@ -1085,6 +1085,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1101,10 +1102,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 #supporters .supporter-logo:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+  /* margin-top: 10px; */
+}
+
+#supporters .supporters-wrap div:first-child .supporter-logo:hover img {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  /* margin-top: 10px; */
 }
 
 #supporters img {
-  max-height: 100px;
+  max-height: 80px;
+  transition: all 0.4s ease-in-out;
+}
+
+#supporters span {
+  margin-bottom: 10px;
   transition: all 0.4s ease-in-out;
 }
 
